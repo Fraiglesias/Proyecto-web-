@@ -1,2 +1,9 @@
-h1 {text-align: center;}
+body {background-color: rgb(245, 192, 237);}
 
+h1 {text-align: center;
+    color:deepskyblue
+}
+
+h5 {text-align: center; color: aqua;
+
+}
