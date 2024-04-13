@@ -1,9 +1,83 @@
-body {background-color: rgb(245, 192, 237);}
-
-h1 {text-align: center;
-    color:deepskyblue
+body {
+    background-color: rgb(245, 192, 237);
 }
 
-h5 {text-align: center; color: aqua;
+.main {
+    width: 100%;
+    display: inline;
+}
+  
+.titulo {
+    margin-top: 10%;
+    text-align: center;
+}
 
+.titulo_principal {
+    -webkit-text-fill-color: rgb(156, 236, 156);
+    -webkit-text-stroke: 2px rgb(206, 77, 184);
+    
+    font-family: cursive ;
+}
+
+.subtitulo {
+    color: #5a7cbb;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #cf7dff;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav ul li a {
+    color: #3b013d;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+.slider {
+    width: 400px;
+    height: 400px;
+}
+
+.titulo_contacto {
+    margin-top: 10%;
+    text-align: center;
+}
+
+.titulo_contacto2 {
+    -webkit-text-fill-color: rgb(156, 236, 156);
+    -webkit-text-stroke: 2px rgb(206, 77, 184);
+    
+    font-family: cursive ;
+}
+
+.formularios {
+    padding: 40px;
+}
+
+.titulo_registro {
+    margin-top: 10%;
+    text-align: center;
+}
+
+.titulo_registro2 {
+    -webkit-text-fill-color: rgb(156, 236, 156);
+    -webkit-text-stroke: 2px rgb(206, 77, 184);
+    
+    font-family: cursive ;
+}
+
+.registros {
+    padding: 40px;
 }
