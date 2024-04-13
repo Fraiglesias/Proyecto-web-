@@ -19,6 +19,19 @@ body {
     font-family: cursive ;
 }
 
+.parrafo {
+    text-align: center;
+    color: rgb(27, 51, 30);
+    font-family: cursive;
+}
+
+.productos_destacados {
+    text-align: center;
+    -webkit-text-fill-color: rgb(178, 237, 245);
+    -webkit-text-stroke: 1px rgb(223, 92, 199);
+    font-family: cursive ;
+}
+
 .subtitulo {
     color: #5a7cbb;
 }
@@ -45,9 +58,9 @@ nav ul li a {
     display: block;
 }
 
-.slider {
-    width: 400px;
-    height: 400px;
+.img-slider {
+    width: 250px;
+    height: auto;
 }
 
 .titulo_contacto {
@@ -80,4 +93,42 @@ nav ul li a {
 
 .registros {
     padding: 40px;
+
 }
+
+.formulario_registro {
+    padding: 40px;
+}
+
+.titulo_categorias {
+    margin-top: 10%;
+    text-align: center;
+}
+
+.titulo_categorias1 {
+    -webkit-text-fill-color: rgb(156, 236, 156);
+    -webkit-text-stroke: 2px rgb(206, 77, 184);
+    
+    font-family: cursive ;
+}
+
+.subtitulo_categorias {
+    color: #5a7cbb;
+}
+
+.list-group {
+    text-align: center;
+}
+
+.titulo_iniciar {
+    margin-top: 10%;
+    text-align: center;
+}
+
+.titulo_iniciar2 {
+    -webkit-text-fill-color: rgb(156, 236, 156);
+    -webkit-text-stroke: 2px rgb(206, 77, 184);
+    
+    font-family: cursive ;
+}
+
