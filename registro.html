@@ -6,14 +6,70 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <title> Registro </title>
     <link rel="stylesheet" href="Estilos.css"/>
+    <script>
+        function validarFormulario() {
+          var Nombre = document.forms["miFormulario"]["nombre"].value;
+          var Apellido = document.forms["miFormulario"]["apellido"].value;
+          var telefono = document.forms["miFormulario"]["telefono"].value;
+          var rut = document.forms["miFormulario"]["rut"].value;
+          var Correo = document.forms["miFormulario"]["correo"].value;
+          var Direccion = document.forms["miFormulario"]["direccion"].value;
+          var expRegTelefono = /^[0-9]{9}$/;
+          var expRegRut = /^[0-9]{8}-[0-9kK]{1}$/;
+          var expRegCorreo = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    
+          if (Nombre == "") {
+            alert("Por favor, ingrese su nombre.");
+            return false;
+          }
+    
+          if (Apellido == "") {
+            alert("Por favor, ingrese su apellido.");
+            return false;
+          }
+    
+          if (telefono == "") {
+            alert("Por favor, ingrese su número de teléfono.");
+            return false;
+          } else if (!expRegTelefono.test(telefono)) {
+            alert("Por favor, ingrese un número de teléfono válido de 9 dígitos.");
+            return false;
+          }
+    
+          if (rut == "") {
+            alert("Por favor, ingrese su RUT.");
+            return false;
+          } else if (!expRegRut.test(rut)) {
+            alert("Por favor, ingrese un RUT válido.");
+            return false;
+          }
+    
+          if (Correo == "") {
+            alert("Por favor, ingrese su correo electrónico.");
+            return false;
+          } else if (!expRegCorreo.test(correo)) {
+            alert("Por favor, ingrese un correo electrónico válido.");
+            return false;
+          }
+    
+          if (Direccion == "") {
+            alert("Por favor, ingrese su dirección.");
+            return false;
+          }
+    
+          return true;
+        }
+    </script>
 </head>
 <body>
     <div class="registros">
         <nav>
             <ul>
                 <li><a href="./Index.html">Inicio</a></li>
-                <li><a href="#">Categorías</a></li>
+                <li><a href="./categorias.html">Categorías</a></li>
                 <li><a href="/contacto.html">Contacto</a></li>
+                <li><a href="./registro.html">Registrarme</a></li>
+                <li><a href="./iniciarsesion.html">Iniciar sesión</a></li>
             </ul>
         </nav>
         <div class="titulo_registro">
@@ -24,54 +80,30 @@
                 <h3> Sé parte de la comunidad Nitsuga ツ </h3>
             </div>
         </div>
-        <form>
-            <div class="form-row">
-                <div class="col">
-                    <label for="inputName">Primer Nombre:</label>
-                    <input type="text" class="form-control" id="inputName" placeholder="Miguel">
+        <div class="formulario_registro container">
+            <form name="miFormulario" onsubmit="return validarFormulario()" method="post">
+                <div class="form-group">
+                    <label>Primer nombre:</label>
+                    <input type="text" class="form-control" name="nombre"><br><br>
+        
+                    <label>Apellido:</label>
+                    <input type="text" class="form-control" name="apellido"><br><br>
+        
+                    <label>Teléfono:</label>
+                    <input type="text" class="form-control" name="telefono"><br><br>
+        
+                    <label>RUT:</label>
+                    <input type="text" class="form-control" name="rut"><br><br>
+        
+                    <label>Correo electrónico:</label>
+                    <input type="email" class="form-control" name="correo"><br><br>
+        
+                    <label>Dirección:</label>
+                    <input type="text" class="form-control" name="direccion"><br><br>
                 </div>
-                <div class="col">
-                    <label for="inputApellido">Apellido:</label>
-                    <input type="text" class="form-control" id="inputApellido" placeholder="Solis">
-                </div>
-            </div>
-            <div class="form-row">
-                <div class="form-group col-md-6">
-                    <label for="inputEmail4">Correo electronico:</label>
-                    <input type="email" class="form-control" id="inputEmail4" placeholder="nombre@example.com">
-                </div>
-                <div class="form-group col-md-6">
-                    <label for="inputPassword4">Contraseña:</label>
-                    <input type="password" class="form-control" id="inputPassword4" placeholder="**********">
-                </div>
-            </div>
-            </div>
-        <div class="form-row">
-            <div class="form-group col-md-6">
-                <label for="inputComuna">Comuna</label>
-                <input type="text" class="form-control" id="inputComuna">
-            </div>                <div class="form-group col-md-4">
-                <label for="inputRegion">Región:</label>
-                <select id="inputRegion" class="form-control">
-                    <option selected>Región:</option>
-                    <option>...</option>
-                </select>
-            </div>
-            <div class="form-group col-md-2">
-                <label for="inputZip">Zip</label>
-                <input type="text" class="form-control" id="inputZip">
-            </div>
+                <input type="submit" class="btn btn-primary" value="Registrarme">
+            </form>
         </div>
-        <div class="form-group">
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="gridCheck">
-                <label class="form-check-label" for="gridCheck">                        
-                    ¡Recordarme!
-                </label>
-            </div>
-            </div>
-        <button type="submit" class="btn btn-primary">Registrarme</button>
-        </form>
     </div>    
 </body>
 </html>
