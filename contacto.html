@@ -8,41 +8,54 @@
     <link rel="stylesheet" href="Estilos.css"/>
 </head>
 <body>
-    <div class="formularios">
-        <nav>
-            <ul>
-                <li><a href="./Index.html">Inicio</a></li>
-                <li><a href="./categorias.html">Categorías</a></li>
-                <li><a href="/contacto.html">Contacto</a></li>
-                <li><a href="./registro.html">Registrarme</a></li>
-                <li><a href="./iniciarsesion.html">Iniciar sesión</a></li>
-            </ul>
-        </nav>
-        <div class="titulo_contacto">
-            <div class="titulo_contacto2">
-                <h1> Formulario de contacto 接触 </h1>
-            </div>
-            <div class="subtitulo">
-                <h3> ¿Necesitas ayuda? ¡Háblanos!ツ </h3>
-            </div>
+    <div class="contacto">
+      <div>
+        <header class="bgcolor d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+          <div class="col-md-3 mb-2 mb-md-0">
+            <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
+              <svg class="bi" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg>
+            </a>
+          </div>
     
-        </div>    
-    <form>
-        <div class="formulario">
-          <label for="correo_electronico">Correo electronico:</label>
-          <input type="email" class="form-control" id="correo_electronico" placeholder="name@example.com">
-        </div>
-        <div class="formulario">
-          <label for="tipo_contacto">Tipo de contacto:</label>
-            <select class="form-control" id="tipo_contacto">
-            <option>Consulta</option>
-            <option>Reclamo</option>
-            <option>Sugerencias</option>
-          </select>
-        </div>
-        <div class="mensaje">
-            <label for="mensaje_solicitud">Escribe aquí tu mensaje:</label>
-            <textarea class="form-control" id="mensaje_solicitud" rows="3"></textarea>
+          <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+            <li><a href="./Index.html" class="text-light nav-link px-2 link-secondary">Inicio</a></li>
+            <li><a href="./contacto.html" class="text-light nav-link px-2">Contacto</a></li>
+            <li><a href="./categorias.html" class="text-light nav-link px-2">Categorias</a></li>
+            <li><a href="#" class="text-light nav-link px-2">Nosotros</a></li>
+          </ul>
+    
+          <div class="col-md-3 text-end">
+            <button type="button" class="btn btn-outline-light me-2" onclick="location.href='./iniciarsesion.html'">Iniciar sesion</button>
+            <button type="button" class="btn btn-primary" onclick="location.href='./singup.html'">Registrarme</button>
+          </div>
+        </header>
+      </div>
+      <div class="titulo_contacto">
+          <div class="titulo_contacto2">
+              <h1> Formulario de contacto 接触 </h1>
+          </div>
+          <div class="subtitulo">
+              <h3> ¿Necesitas ayuda? ¡Háblanos!ツ </h3>
+          </div>
+    
+      </div>    
+      <div class="formulario_contacto container">
+        <form>
+          <div>
+            <label for="correo_electronico">Correo electronico:</label>
+            <input type="email" class="form-control" id="correo_electronico" placeholder="name@example.com">
+          </div>
+          <div class="formulario">
+            <label for="tipo_contacto">Tipo de contacto:</label>
+              <select class="form-control" id="tipo_contacto">
+              <option>Consulta</option>
+              <option>Reclamo</option>
+              <option>Sugerencias</option>
+            </select>
+          </div>
+          <div class="mensaje">
+              <label for="mensaje_solicitud">Escribe aquí tu mensaje:</label>
+              <textarea class="form-control" id="mensaje_solicitud" rows="3"></textarea>
           </div>
         </form>
         <form>
@@ -53,5 +66,9 @@
         </form>
         <br>
         <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+      </div>
+
+      </div>
+
 </body>
 </html>

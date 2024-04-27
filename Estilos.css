@@ -1,3 +1,4 @@
+
 body {
     background-color: rgb(245, 192, 237);
 }
@@ -8,7 +9,7 @@ body {
 }
   
 .titulo {
-    margin-top: 10%;
+    margin-top: 5%;
     text-align: center;
 }
 
@@ -64,7 +65,7 @@ nav ul li a {
 }
 
 .titulo_contacto {
-    margin-top: 10%;
+    margin-top: 5%;
     text-align: center;
 }
 
@@ -80,7 +81,7 @@ nav ul li a {
 }
 
 .titulo_registro {
-    margin-top: 10%;
+    margin-top: 5%;
     text-align: center;
 }
 
@@ -91,17 +92,12 @@ nav ul li a {
     font-family: cursive ;
 }
 
-.registros {
-    padding: 40px;
-
-}
-
 .formulario_registro {
     padding: 40px;
 }
 
 .titulo_categorias {
-    margin-top: 10%;
+    margin-top: 5%;
     text-align: center;
 }
 
@@ -121,7 +117,7 @@ nav ul li a {
 }
 
 .titulo_iniciar {
-    margin-top: 10%;
+    margin-top: 5%;
     text-align: center;
 }
 
@@ -132,3 +128,41 @@ nav ul li a {
     font-family: cursive ;
 }
 
+.formulario_contacto {
+    padding: 40px;
+}
+
+.form-control-dark {
+  border-color: var(--bs-gray);
+}
+.form-control-dark:focus {
+  border-color: #fff;
+  box-shadow: 0 0 0 .25rem rgba(255, 255, 255, .25);
+}
+
+.text-small {
+  font-size: 85%;
+}
+
+.dropdown-toggle:not(:focus) {
+  outline: 0;
+}
+
+.bgcolor {
+    background-color: #b858bb;
+    color: #fff;
+}
+
+.login_container {
+    margin-top: 5%;
+    border-radius: 20px;
+}
+
+.img-login {
+    width: 150px;
+    height: auto;
+}
+
+.alerta-login {
+    display: none;
+}

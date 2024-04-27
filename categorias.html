@@ -8,16 +8,28 @@
     <link rel="stylesheet" href="Estilos.css"/>
 </head>
 <body>
-    <div class="main">
-        <nav>
-            <ul>
-                <li><a href="./Index.html">Inicio</a></li>
-                <li><a href="./categorias.html">Categorías</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-                <li><a href="./registro.html">Registrarme</a></li>
-                <li><a href="./iniciarsesion.html">Iniciar sesión</a></li>
-            </ul>
-        </nav>
+    <div class="categorias">
+        <div>
+            <header class="bgcolor d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+              <div class="col-md-3 mb-2 mb-md-0">
+                <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
+                  <svg class="bi" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg>
+                </a>
+              </div>
+        
+              <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+                <li><a href="./Index.html" class="text-light nav-link px-2 link-secondary">Inicio</a></li>
+                <li><a href="./contacto.html" class="text-light nav-link px-2">Contacto</a></li>
+                <li><a href="./categorias.html" class="text-light nav-link px-2">Categorias</a></li>
+                <li><a href="#" class="text-light nav-link px-2">Nosotros</a></li>
+              </ul>
+        
+              <div class="col-md-3 text-end">
+                <button type="button" class="btn btn-outline-light me-2" onclick="location.href='./iniciarsesion.html'">Iniciar sesion</button>
+                <button type="button" class="btn btn-primary" onclick="location.href='./singup.html'">Registrarme</button>
+              </div>
+            </header>
+        </div>
         <div class="titulo_categorias">
             <div class="titulo_categorias1">
                 <h1> Categorias </h1>
